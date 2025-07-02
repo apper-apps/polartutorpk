@@ -1,0 +1,80 @@
+[
+  {
+    "Id": 1,
+    "conversationId": "conv_20240215_001",
+    "tutorId": 1,
+    "tutorName": "Dr. Ahmad Hassan",
+    "tutorPhoto": "",
+    "subject": "Mathematics Help",
+    "lastMessage": "Great! I'll prepare some additional practice problems for calculus derivatives. Let's focus on the chain rule in our next session.",
+    "lastMessageAt": "2024-02-15T10:30:00Z",
+    "messageCount": 8,
+    "isRead": false,
+    "hasUnread": true
+  },
+  {
+    "Id": 2,
+    "conversationId": "conv_20240214_002",
+    "tutorId": 2,
+    "tutorName": "Ms. Fatima Khan",
+    "tutorPhoto": "",
+    "subject": "English Literature Discussion",
+    "lastMessage": "Your essay analysis was excellent! I've attached some additional reading materials for Shakespeare's themes. Keep up the good work!",
+    "lastMessageAt": "2024-02-14T16:45:00Z",
+    "messageCount": 12,
+    "isRead": true,
+    "hasUnread": false
+  },
+  {
+    "Id": 3,
+    "conversationId": "conv_20240213_003",
+    "tutorId": 3,
+    "tutorName": "Mr. Ali Raza",
+    "tutorPhoto": "",
+    "subject": "Python Programming Questions",
+    "lastMessage": "Here's the solution to the algorithm problem we discussed. Try implementing it yourself and let me know if you get stuck on any part.",
+    "lastMessageAt": "2024-02-13T14:20:00Z",
+    "messageCount": 15,
+    "isRead": false,
+    "hasUnread": true
+  },
+  {
+    "Id": 4,
+    "conversationId": "conv_20240212_004",
+    "tutorId": 4,
+    "tutorName": "Dr. Ayesha Malik",
+    "tutorPhoto": "",
+    "subject": "MDCAT Biology Preparation",
+    "lastMessage": "The cell biology diagrams you submitted show good understanding. Let's work on genetics problems in our next session.",
+    "lastMessageAt": "2024-02-12T11:15:00Z",
+    "messageCount": 6,
+    "isRead": true,
+    "hasUnread": false
+  },
+  {
+    "Id": 5,
+    "conversationId": "conv_20240211_005",
+    "tutorId": 5,
+    "tutorName": "Mr. Hassan Sheikh",
+    "tutorPhoto": "",
+    "subject": "Economics Assignment Help",
+    "lastMessage": "I'll send you some real-world examples of supply and demand curves. This will help you understand the practical applications better.",
+    "lastMessageAt": "2024-02-11T09:30:00Z",
+    "messageCount": 4,
+    "isRead": false,
+    "hasUnread": true
+  },
+  {
+    "Id": 6,
+    "conversationId": "conv_20240210_006",
+    "tutorId": 6,
+    "tutorName": "Ms. Zara Ahmed",
+    "tutorPhoto": "",
+    "subject": "Statistics Problem Solving",
+    "lastMessage": "Your probability calculations are improving! I've shared some additional practice sets for normal distribution problems.",
+    "lastMessageAt": "2024-02-10T15:45:00Z",
+    "messageCount": 9,
+    "isRead": true,
+    "hasUnread": false
+  }
+]

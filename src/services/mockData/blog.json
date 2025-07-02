@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "title": "10 Effective Study Techniques for Pakistani Students",
+    "excerpt": "Discover proven study methods that work best for Pakistani education system, from Matric to university level. Learn how to optimize your study time and improve retention.",
+    "content": "Full blog content here...",
+    "category": "Study Tips",
+    "author": "Dr. Ahmad Hassan",
+    "publishedAt": "2024-01-15T10:00:00Z",
+    "readTime": 8,
+    "featured": true,
+    "tags": ["study tips", "education", "pakistan", "students"]
+  },
+  {
+    "Id": 2,
+    "title": "Complete Guide to O Level Mathematics Preparation",
+    "excerpt": "Master O Level mathematics with our comprehensive preparation guide. Covers all topics from algebra to trigonometry with practice problems and solutions.",
+    "content": "Full blog content here...",
+    "category": "Exam Prep",
+    "author": "Ms. Zara Ahmed",
+    "publishedAt": "2024-01-20T14:30:00Z",
+    "readTime": 12,
+    "featured": false,
+    "tags": ["o level", "mathematics", "exam prep", "cambridge"]
+  },
+  {
+    "Id": 3,
+    "title": "How to Choose the Right Tutor for Your Child",
+    "excerpt": "A parent's guide to selecting the perfect tutor. Learn what to look for in qualifications, teaching style, and compatibility with your child's learning needs.",
+    "content": "Full blog content here...",
+    "category": "Parenting",
+    "author": "Ms. Fatima Khan",
+    "publishedAt": "2024-01-25T09:15:00Z",
+    "readTime": 6,
+    "featured": false,
+    "tags": ["parenting", "tutoring", "education", "children"]
+  },
+  {
+    "Id": 4,
+    "title": "MDCAT Preparation Strategy: Biology Section",
+    "excerpt": "Ace the MDCAT biology section with our expert tips. Covers all important topics, study schedule, and practice questions for medical college admission test.",
+    "content": "Full blog content here...",
+    "category": "MDCAT",
+    "author": "Dr. Ayesha Malik",
+    "publishedAt": "2024-02-01T11:45:00Z",
+    "readTime": 15,
+    "featured": true,
+    "tags": ["mdcat", "biology", "medical", "exam prep"]
+  },
+  {
+    "Id": 5,
+    "title": "Programming Languages Every Student Should Learn",
+    "excerpt": "Explore the most important programming languages for students in 2024. From Python to JavaScript, discover which languages will boost your career prospects.",
+    "content": "Full blog content here...",
+    "category": "Technology",
+    "author": "Mr. Ali Raza",
+    "publishedAt": "2024-02-05T16:20:00Z",
+    "readTime": 10,
+    "featured": false,
+    "tags": ["programming", "technology", "career", "students"]
+  },
+  {
+    "Id": 6,
+    "title": "English Language Skills for Professional Success",
+    "excerpt": "Improve your English communication skills for better career opportunities. Tips for speaking, writing, and professional communication in Pakistani context.",
+    "content": "Full blog content here...",
+    "category": "Language Skills",
+    "author": "Ms. Fatima Khan",
+    "publishedAt": "2024-02-08T13:00:00Z",
+    "readTime": 7,
+    "featured": false,
+    "tags": ["english", "communication", "professional", "career"]
+  },
+  {
+    "Id": 7,
+    "title": "Understanding Pakistan's Education System",
+    "excerpt": "A comprehensive overview of Pakistan's education system from primary to higher education. Understand different boards, examination systems, and pathways.",
+    "content": "Full blog content here...",
+    "category": "Education System",
+    "author": "Dr. Ahmad Hassan",
+    "publishedAt": "2024-02-10T10:30:00Z",
+    "readTime": 9,
+    "featured": false,
+    "tags": ["pakistan", "education system", "students", "parents"]
+  },
+  {
+    "Id": 8,
+    "title": "Time Management Tips for Students",
+    "excerpt": "Master the art of time management as a student. Learn how to balance studies, extracurricular activities, and personal time effectively.",
+    "content": "Full blog content here...",
+    "category": "Study Tips",
+    "author": "Mr. Hassan Sheikh",
+    "publishedAt": "2024-02-12T15:45:00Z",
+    "readTime": 5,
+    "featured": false,
+    "tags": ["time management", "productivity", "students", "study tips"]
+  }
+]

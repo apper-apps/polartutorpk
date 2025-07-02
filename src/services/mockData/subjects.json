@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "name": "Mathematics",
+    "tutorCount": 145,
+    "description": "Basic to advanced mathematics including algebra, calculus, and geometry",
+    "category": "Science"
+  },
+  {
+    "Id": 2,
+    "name": "Physics",
+    "tutorCount": 89,
+    "description": "Classical and modern physics concepts with practical applications",
+    "category": "Science"
+  },
+  {
+    "Id": 3,
+    "name": "Chemistry",
+    "tutorCount": 76,
+    "description": "Organic, inorganic, and physical chemistry for all levels",
+    "category": "Science"
+  },
+  {
+    "Id": 4,
+    "name": "Biology",
+    "tutorCount": 92,
+    "description": "Life sciences, anatomy, and biological processes",
+    "category": "Science"
+  },
+  {
+    "Id": 5,
+    "name": "English",
+    "tutorCount": 134,
+    "description": "English language, literature, and communication skills",
+    "category": "Language"
+  },
+  {
+    "Id": 6,
+    "name": "Urdu",
+    "tutorCount": 67,
+    "description": "Urdu language, literature, and creative writing",
+    "category": "Language"
+  },
+  {
+    "Id": 7,
+    "name": "Computer Science",
+    "tutorCount": 58,
+    "description": "Programming, algorithms, and computer fundamentals",
+    "category": "Technology"
+  },
+  {
+    "Id": 8,
+    "name": "Economics",
+    "tutorCount": 43,
+    "description": "Micro and macroeconomics principles and applications",
+    "category": "Social Science"
+  },
+  {
+    "Id": 9,
+    "name": "Accounting",
+    "tutorCount": 52,
+    "description": "Financial accounting, cost accounting, and bookkeeping",
+    "category": "Business"
+  },
+  {
+    "Id": 10,
+    "name": "History",
+    "tutorCount": 29,
+    "description": "World history, Pakistan studies, and historical analysis",
+    "category": "Social Science"
+  }
+]

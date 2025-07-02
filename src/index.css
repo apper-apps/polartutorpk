@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'react-toastify/dist/ReactToastify.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #ffffff;
+}
+
+.font-display {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  z-index: 9999;
+}
+
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #00694E 0%, #1A237E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom animations */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.shimmer {
+  background: linear-gradient(90deg, #f0f0f0 0px, #e0e0e0 40px, #f0f0f0 80px);
+  background-size: 200px;
+  animation: shimmer 1.5s infinite;
+}
+
+/* RTL Support for Urdu */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .flex {
+  flex-direction: row-reverse;
+}
+
+/* Mobile-first responsive utilities */
+.mobile-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.container-responsive {
+  @apply max-w-7xl mx-auto mobile-padding;
+}

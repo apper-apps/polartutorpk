@@ -7,6 +7,7 @@ import Button from "@/components/atoms/Button";
 import Badge from "@/components/atoms/Badge";
 import Rating from "@/components/atoms/Rating";
 import Avatar from "@/components/atoms/Avatar";
+import MapContainer from "@/components/molecules/MapContainer";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
 import { tutorService } from "@/services/api/tutorService";
@@ -188,7 +189,29 @@ const TutorProfilePage = () => {
                   </div>
                 ))}
               </div>
-            </Card>
+</Card>
+
+            {/* Tutor Location */}
+            {tutor.latitude && tutor.longitude && (
+              <Card className="p-8">
+                <h2 className="text-xl font-semibold text-gray-900 mb-6">Tutor Location</h2>
+                <div className="mb-4">
+                  <div className="flex items-center text-gray-600 mb-2">
+                    <ApperIcon name="MapPin" className="w-5 h-5 mr-2" />
+                    <span className="font-medium">{tutor.city}</span>
+                  </div>
+                  <p className="text-sm text-gray-500">
+                    This map shows the general area where this tutor is located. Exact address will be shared after booking confirmation.
+                  </p>
+                </div>
+                <MapContainer
+                  tutors={[tutor]}
+                  height="350px"
+                  center={[tutor.latitude, tutor.longitude]}
+                  zoom={12}
+                />
+              </Card>
+            )}
 
             {/* Reviews */}
             <Card className="p-8">

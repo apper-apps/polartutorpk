@@ -4,6 +4,7 @@ import { toast } from "react-toastify";
 import ApperIcon from "@/components/ApperIcon";
 import TutorCard from "@/components/molecules/TutorCard";
 import FilterSidebar from "@/components/molecules/FilterSidebar";
+import MapContainer from "@/components/molecules/MapContainer";
 import Button from "@/components/atoms/Button";
 import Loading from "@/components/ui/Loading";
 import Error from "@/components/ui/Error";
@@ -15,8 +16,9 @@ const BrowseTutorsPage = () => {
   const [filteredTutors, setFilteredTutors] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-  const [filters, setFilters] = useState({});
+const [filters, setFilters] = useState({});
   const [sortBy, setSortBy] = useState("rating");
+  const [viewMode, setViewMode] = useState("grid");
   const [currentPage, setCurrentPage] = useState(1);
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
@@ -150,22 +152,44 @@ const BrowseTutorsPage = () => {
           <h1 className="text-3xl md:text-4xl font-bold font-display text-gray-900 mb-4">
             Find Your Perfect <span className="gradient-text">Tutor</span>
           </h1>
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+<div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
             <p className="text-gray-600">
               Showing {filteredTutors.length} tutors {filters.subject && `for ${filters.subject}`}
             </p>
-            <div className="flex items-center gap-2">
-              <label className="text-sm font-medium text-gray-700">Sort by:</label>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
-              >
-                <option value="rating">Highest Rated</option>
-                <option value="price-low">Price: Low to High</option>
-                <option value="price-high">Price: High to Low</option>
-                <option value="experience">Most Experienced</option>
-              </select>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center bg-gray-100 rounded-lg p-1">
+                <Button
+                  size="sm"
+                  variant={viewMode === "grid" ? "primary" : "ghost"}
+                  onClick={() => setViewMode("grid")}
+                  className="px-3 py-1"
+                >
+                  <ApperIcon name="Grid3X3" className="w-4 h-4 mr-1" />
+                  Grid
+                </Button>
+                <Button
+                  size="sm"
+                  variant={viewMode === "map" ? "primary" : "ghost"}
+                  onClick={() => setViewMode("map")}
+                  className="px-3 py-1"
+                >
+                  <ApperIcon name="Map" className="w-4 h-4 mr-1" />
+                  Map
+                </Button>
+              </div>
+              <div className="flex items-center gap-2">
+                <label className="text-sm font-medium text-gray-700">Sort by:</label>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent"
+                >
+                  <option value="rating">Highest Rated</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="experience">Most Experienced</option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
@@ -180,14 +204,21 @@ const BrowseTutorsPage = () => {
             />
           </div>
 
-          {/* Tutors Grid */}
+{/* Content Area */}
           <div className="lg:col-span-3">
-            {currentTutors.length === 0 ? (
+            {filteredTutors.length === 0 ? (
               <Empty
                 title="No tutors found"
                 description="Try adjusting your filters or search criteria to find more tutors."
                 actionText="Clear Filters"
                 onAction={() => setFilters({})}
+              />
+            ) : viewMode === "map" ? (
+              <MapContainer
+                tutors={filteredTutors}
+                onViewProfile={handleViewProfile}
+                onBookNow={handleBookNow}
+                height="600px"
               />
             ) : (
               <>
